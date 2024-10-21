@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação de Urna Eletrônica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Vote no seu candidato:</h2><br/>
+  <div class="urna">
+    <div>
+      <img src="imagens/bolsonaro.jpg" alt="BOLSONARO"/><br/>
+      <button onclick="votar('BOLSONARO')">BOLSONARO</button>
+    </div>
+    <div>
+      <img src="imagens/tarcisio.jpg" alt="TARCISIO"/><br/>
+      <button onclick="votar('TARCISIO')">TARCISIO</button>
+    </div>
+    <div>
+      <img src="imagens/lula.jpg" alt="LULA"/><br/>
+      <button onclick="votar('LULA')">LULA</button>
+    </div>
+  </div>
+  <br/>
+  <div class="resultado">
+    <h3 id="resultado"></h3>
+  </div>
+  <div class="resultadoContainer">
+    <div>
+      <button onclick="mostrarTotal()">Mostrar Total de Cliques e Votos</button><br/>
+    </div>
+    <div>
+      <p id="resultadoTotal"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
