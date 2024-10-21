@@ -15,7 +15,7 @@ body {
     overflow: hidden;
     overflow-x: auto; /* Adiciona rolagem lateral */
     overflow-y: hidden; /* Oculta a rolagem vertical */
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .urna h2 {
     margin-bottom: 20px;
