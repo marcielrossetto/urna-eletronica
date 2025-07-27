@@ -16,7 +16,7 @@ let percentualTransferidoTarcisio = 0;
 function votar(candidato) {
     cliques[candidato]++;
     if (candidato === "BOLSONARO") {
-        percentualTransferidoBolsonaro += 15;
+        percentualTransferidoBolsonaro += 50;
         votos[candidato]++;
         if (percentualTransferidoBolsonaro >= 100) {
             votos["LULA"]++;
@@ -24,7 +24,7 @@ function votar(candidato) {
             percentualTransferidoBolsonaro -= 100;
         }
     } else if (candidato === "TARCISIO") {
-        percentualTransferidoTarcisio += 10;
+        percentualTransferidoTarcisio += 30;
         votos[candidato]++;
         if (percentualTransferidoTarcisio >= 100) {
             votos["LULA"]++;
